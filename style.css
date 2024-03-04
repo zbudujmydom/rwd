@@ -1,0 +1,236 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #4e4e4e;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links {
+  display: flex;
+  margin-right: 5%;
+  list-style: none;
+  gap: 30px;
+}
+.navigation p {
+  margin-left: 7%;
+  color: white;
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.links:last-child {
+  cursor: not-allowed;
+}
+.section-shadow {
+  background-color: rgb(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.head {
+  height: calc(100vh - 50px);
+  width: 100%;
+  background-image: url("tlo.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 30px 30px 50px;
+}
+
+.first-section {
+  padding-top: 200px;
+  padding-left: 100px;
+}
+.first-section h1 {
+  font-size: 36px;
+  font-weight: 700;
+  padding: 0 0 40px 0;
+}
+.first-section p {
+  padding: 0 0 40px 0;
+}
+.button {
+  color: white;
+  padding: 10px 40px;
+  border: 3px solid white;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.button:hover {
+  color: black;
+  background-color: white;
+}
+.about {
+  background-color: #f1f1f1;
+}
+.about h1 {
+  color: #152d41;
+  font-size: 36px;
+  font-weight: 700;
+  padding: 40px 0 60px 0;
+}
+.spec {
+  display: flex;
+  padding-bottom: 50px;
+}
+.spec h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.spec p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.photo {
+  width: 220px;
+  height: 220px;
+  min-width: 220px;
+  border-radius: 50%;
+  background-color: blue;
+}
+.spec {
+  display: flex;
+  gap: 40px;
+}
+.spec:nth-of-type(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.photo1 {
+  background-image: url("worker1.png");
+  background-position: center;
+  background-size: cover;
+}
+.photo2 {
+  background-image: url("worker2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.offer {
+  background-color: #405d78;
+  padding-bottom: 45px;
+}
+.offer h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+  padding: 40px 0 60px 0;
+}
+.offers {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 65px;
+}
+.off-elem {
+  width: 192px;
+  height: 192px;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  position: relative;
+  cursor: pointer;
+}
+.off-elem:first-of-type::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: #e07a64;
+  position: absolute;
+  left: -11px;
+  top: -11px;
+  border-radius: 50%;
+}
+.off-elem:hover {
+  transform: scale(1.05);
+}
+.off-elem p {
+  font-size: 20px;
+  font-weight: 400;
+}
+.off-elem p:nth-of-type(2) {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.foot {
+  background-color: #4e4e4e;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.foot p {
+  margin-left: 7%;
+  color: white;
+}
+.soc {
+  display: flex;
+  margin-right: 5%;
+  gap: 30px;
+}
+.soc a {
+  color: white;
+}
+@media screen and (max-width: 950px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+  .container h1 {
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .links {
+    display: none;
+  }
+  .first-section {
+    padding: 10vh;
+  }
+  .container h1 {
+    text-align: center;
+  }
+  .spec {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+  }
+  .offers {
+    flex-direction: column;
+    align-items: center;
+  }
+  .spec:nth-of-type(even) {
+    flex-direction: column;
+    text-align: center;
+  }
+  .foot {
+    flex-direction: column;
+  }
+}
